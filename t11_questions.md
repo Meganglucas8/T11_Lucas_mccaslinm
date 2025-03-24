@@ -13,8 +13,8 @@ ___
 ```
     |                 | Monday | Wednesday | Friday |
     |-----------------|--------|-----------|--------|
-    | Driver          |        |           |        |
-    | Navigator       |        |           |        |
+    | Driver          |   Meg  |  Mag      | Meg    |
+    | Navigator       |     Mag|   Meg     |  Mag   |
     | Quality Control |        |           |        |
 ```
 
@@ -26,7 +26,8 @@ ___
     what each one represents:
 
 ```
-    **Replace This Text With Your Response**
+    For the Game class it is defining the game logic. While NPC class defines what a 'good npc' and controls its movement.
+    Last the class player represents the player and controls it's movements.
 ```
 
 2.b. Look more closely at the **t11_game.py** file. There are 8 lines; identify if they are 
@@ -37,14 +38,14 @@ ___
 (Some are more than one answer!)
 
 ```
-    self.size = 800, 600                              # **Replace This Text With Your Response**
-    self.running = True                               # **Replace This Text With Your Response**
-    pygame.init()                                     # **Replace This Text With Your Response**
-    self.screen = pygame.display.set_mode(self.size)  # **Replace This Text With Your Response**
-    self.clock = pygame.time.Clock()                  # **Replace This Text With Your Response**
-    self.player = Player(self.size)                   # **Replace This Text With Your Response**
-    self.good_npc = NPC(self.size)                    # **Replace This Text With Your Response**
-    self.screen.fill('#9CBEBA')                       # **Replace This Text With Your Response**
+    self.size = 800, 600                              # A
+    self.running = True                               # A
+    pygame.init()                                     # C
+    self.screen = pygame.display.set_mode(self.size)  # C
+    self.clock = pygame.time.Clock()                  # C
+    self.player = Player(self.size)                   # C
+    self.good_npc = NPC(self.size)                    # C
+    self.screen.fill('#9CBEBA')                       # A
 ```
 
 2.c. Parse through the `run()` method of **t11_game.py**. In particular, note how the game handles 
@@ -56,8 +57,8 @@ ___
 In your own words, describe how the four items above are accomplished in the Game class:
 
 ```
-    a) **Replace This Text With Your Response**
-    b) **Replace This Text With Your Response**
+    a) it checks to see if the stament is false and prints "Taco you caught me" it ends the game. 
+    b) this 
     c) **Replace This Text With Your Response**
     d) **Replace This Text With Your Response**
 ```
