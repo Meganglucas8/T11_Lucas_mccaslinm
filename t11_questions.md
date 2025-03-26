@@ -57,10 +57,10 @@ ___
 In your own words, describe how the four items above are accomplished in the Game class:
 
 ```
-    a) it checks to see if the stament is false and prints "Taco you caught me" it ends the game. 
-    b) this 
-    c) **Replace This Text With Your Response**
-    d) **Replace This Text With Your Response**
+    a) It checks to see if the stament is false and prints "Taco you caught me" it ends the game. 
+    b) The program moves the player based of the keys pressed by the user, while the NPC is based off of a random selection of n, e, s, w.
+    c) This is done through the .blit method which allows the program to erase the current object and redrawing the new updated object.
+    d) This is done through the self.clock.tick method that assures it updates 24 times a second.
 ```
 
 _Return to the Google Doc to continue the assignment._
@@ -73,7 +73,7 @@ _Return to the Google Doc to continue the assignment._
      How do you know?
 
 ```
-    **Replace This Text With Your Response**
+    The 'Player' class inherits its functionality from the 'Sprite class in pygame'. We know this because the 'Sprite' class was passed in to the 'Player' class as a parameter
 ```
 
 3.b. Sprites need two attributes to function: A surface and a rectangle. The surface (implemented in a `Surface` 
@@ -83,27 +83,27 @@ _Return to the Google Doc to continue the assignment._
      and explain what each line does. 
 
 ```
-    **Replace This Text With Your Response**
+    For the player, the code the implements this is Line 32-35, while for NPC it is Line 34-37.
 ```
 
 3.c. The `Player` class has only one method so far. Parse that code and docstring, and describe what it does:
 
 ```
-    **Replace This Text With Your Response**
+    This method listens for the keypress from the user and depending on what the keypress is (up, down, left, right), it moves the player 3 pixels in the respective direction.
 ```
 
 3.d. Similarly, the `NPC` class in **t11_NPC.py** also inherits the `Sprite` class from **pygame**, 
      but it does a little more than our `Player` class. Compare the two classes, and identify/describe the differences:
 
 ```
-    **Replace This Text With Your Response**
+    The NPC Class has a random path that it follows and also starts its position in the middle of the screen.
 ```
 
 3.e. Of particular interest is how we keep the `NPC` on the screen. Describe how we're using 
     the `self.rect` attribute in the `get_direction()` method to keep the `NPC` visible.  
 
 ```
-    **Replace This Text With Your Response**
+    As the 'self.rect' goes past the boudnaries of the screen size, the 'self.path' attribute is changed to the opposite direction to ensure the NPC stays on screen.
 ```
 
 _Return to the Google doc to continue the assignment._ 
@@ -120,7 +120,7 @@ instead of an NPC. Debug any errors you get; the program should work, at this po
 4.a. How hard was it to create the child class, given the parent?
 
 ```
-    **Replace This Text With Your Response**
+    It was challenging to figure out which parameters were needed in the child class.
 ```
 
 The parent class `NPC` currently holds attributes like the image used, which are actually more specific to 
@@ -141,7 +141,7 @@ make a design choice. We could:
      choice and why: 
 
 ```
-    **Replace This Text With Your Response**
+    We chose 'B' because we figured it would be less complicated to create the code separately for both child classes.
 ```
 
 Finally, we need to create our enemy object, Whiskers. Update **t11_game.py** to:
