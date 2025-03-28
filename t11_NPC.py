@@ -134,3 +134,6 @@ class BadNPC(NPC):
         elif random.random() > .95:
             # Randomly change direction 5% of the time
             self.path = random.choice(self.directions)
+
+
+
